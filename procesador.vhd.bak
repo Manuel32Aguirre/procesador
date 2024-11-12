@@ -1,0 +1,12 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+USE IEEE.std_logic_unsigned.all;
+
+entity procesador is
+port(
+	clk, clr: in std_logic;
+	portb
+);
+}
+
+end procesador;
