@@ -11,7 +11,7 @@ port(
 end procesador;
 
 architecture Behavioral of procesador is
-
+//
 component ALU IS
 PORT(
 	A, B : IN STD_LOGIC_VECTOR (7 DOWNTO 0);
