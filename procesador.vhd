@@ -107,10 +107,57 @@ signal I_pc_aux, I_aux, pc_aux, off_br_aux, off_rjmp_aux: STD_LOGIC_VECTOR(15 do
 signal rd_aux, wd_aux, offset_aux, br_mux_aux: STD_LOGIC_VECTOR(15 downto 0);
 signal O_r_aux, O_d_aux, F_aux, dato_I_aux: STD_LOGIC_VECTOR(7 downto 0);
 signal sel_w_d_aux, sel_r_d_aux,, sel_r_r_aux: std_logic_vector(4 downto 0);
+signal A_aux, i_sp_aux o_sp_aux, call_aux, ret_aux_ std_logic_vector(3 downto 0);
 signal sel_alu_aux: STD_LOGIC_VECTOR(2 downto 0);
 signal ld_aux, ld_mov_aux, sel_rel_aux, br_aux, bn_aux, en_w_aux, en_port_aux, en_sreg_aux: std_logic;
 signal ret_s_aux, s1_aux, s0_aux, s_sreg_aux, ent_sreg_aux, branch_aux: std_logic;
 
+offset_aux <= x"0001" when sel_rel_aux = '0' and branch_aux = '0' else
+	off_br_aux when sel_rel_aux = '0' and branch_aux = '1' else
+	off_rjmp_aux;
+
+branch_aux <= bn_aux when s_sreg_aux = '0' else
+	br_aux;
+
+br_mux_aux <= I_pc_aux when ret_s_aux = '0' else
+	rd_aux;
+
+dato_i_aux <= I_aux(11 downto 8) & I_aux(3 downto 0) when ld_mov_aux = '0' and ld_aux = '0' else
+	O_r_aux when ld_mov_aux = '0' and ld_aux '1' else
+		F_aux;
+
+i_sp_aux <= o_sp_aux when s1='0' and s0='0' else
+	call_aux when s1='0' and s0='1' else
+	ret_aux;
+
+A_aux <= o_sp_aux when s1 = '0' else
+	ret_aux;
+
+I_pc_aux <= offset_aux + pc_aux;
+wd_aux <= x"0001" + pc_aux;
+
+call_aux <= o_sp_aux - 2;
+
+ret_aux <= o_sp_aux + 2;
+
+dec_int: dec_instruccion port map(
+	I => I_aux,
+	sel_r_d => sel_r_d_aux,
+	sel_r_r => sel_r_r_aux,
+	sel_w_d => sel_w_d_aux,
+	sel_alu => sel_alu_aux,
+	ld => ld_aux,
+	ld_mov => ld_mov_aux,
+	sel_rel => sel_rel_aux,
+	br => br_aux,
+	bn => bn_aux,
+	en_w => en_w_aux,
+	en_port => en_port_aux,
+	en_sreg => en_sreg_aux,
+	ret_s => ret_s_aux,
+	s1 => s1_aux,
+	s0 => s0_aux
+)
 
 
 
