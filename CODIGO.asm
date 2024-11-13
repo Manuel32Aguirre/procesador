@@ -1,3 +1,6 @@
+def temp = rjmp
+def cte=r17
+
 .cseg
 .org 0
 
