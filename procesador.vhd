@@ -102,10 +102,16 @@ port(
 );
 end component;
 
-signal I_pc_aux, I_aux, pc_aux, off_br_aux, off_rjmp_aux, offset_aux, br_mux_aux, rd_aux, wd_aux : STD_LOGIC_VECTOR(15 downto 0);
-signal O_r_aux, O_d_aux, F_aux, dato_I_aux : STD_LOGIC_VECTOR(7 downto 0);
+
+signal I_pc_aux, I_aux, pc_aux, off_br_aux, off_rjmp_aux: STD_LOGIC_VECTOR(15 downto 0)
+signal rd_aux, wd_aux, offset_aux, br_mux_aux: STD_LOGIC_VECTOR(15 downto 0);
+signal O_r_aux, O_d_aux, F_aux, dato_I_aux: STD_LOGIC_VECTOR(7 downto 0);
+signal sel_w_d_aux, sel_r_d_aux,, sel_r_r_aux: std_logic_vector(4 downto 0);
 signal sel_alu_aux: STD_LOGIC_VECTOR(2 downto 0);
-signal ent_sreg_aux,s_sreg_aux,bn_aux,br_aux,z_1,branch_aux,z_0: STD_LOGIC;
+signal ld_aux, ld_mov_aux, sel_rel_aux, br_aux, bn_aux, en_w_aux, en_port_aux, en_sreg_aux: std_logic;
+signal ret_s_aux, s1_aux, s0_aux, s_sreg_aux, ent_sreg_aux, branch_aux: std_logic;
+
+
 
 
 begin
