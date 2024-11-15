@@ -97,8 +97,8 @@ end component;
 component Stack_P is
 port(
 	clk,clr: in std_logic;
-	I_ap: in std_logic_vector (3 downto 0);
-	O_ap: out std_logic_vector (3 downto 0)
+	I_sp: in std_logic_vector (3 downto 0);
+	O_sp: out std_logic_vector (3 downto 0)
 );
 end component;
 
@@ -159,7 +159,66 @@ dec_int: dec_instruccion port map(
 	s0 => s0_aux
 )
 
+ext_s1: ext_sig_br port map(Ibr=>I_aux, Obr=>off_br_aux);
 
+ext_s2: ext_sig_rjmp port map(I_r=>I_aux, O_r=>off_rjmp_aux);
+
+pc: program_c port map(clk=>clk, clr=>clr, I=>br_mux_aux, O=>pc_aux);
+
+rom: mem_prog port map(A=>pc_aux, O=>I_aux);
+
+archivo_r: archivo_registros port map(
+	clk=>clk,
+	clr=>clr,
+	en_w=>en_w_aux,
+	sel_w_d=>sel_w_d_aux,
+	sel_r_r=>sel_r_r_aux,
+	sel_r_d=>sel_r_d_aux,
+	dato_I=>dato_I_aux,
+	O_r=>O_r_aux,
+	O_d=>O_d_aux
+);
+
+A_L_U: ALU port map(
+	A=>O_d_aux,
+	B=>O_r_aux,
+	SEL=>sel_alu_aux,
+	F=>F_aux,
+	Z=>ent_sreg_aux
+);
+
+puertoB: regsitro port map(
+	clk=>clk,
+	clr=>clr,
+	en=>en_port_aux,
+	I=> O_r_aux,
+	Q=>portb
+);
+
+registro_s: sreg port map(
+	clk=>clk,
+	clr=>clr,
+	en=>en_sreg_aux,
+	I=>ent_sreg_aux,
+	Q=>s_sreg_aux
+);
+
+R_A_M: RAM port map(
+	clk=>clk,
+	we=>s0_aux,
+	A=>A_aux,
+	WD=>wd_aux,
+	RD=>rd_aux
+);
+
+stack_p: Stack_P port map(
+	clk=>clk,
+	clr=>clr,
+	I_sp=>i_sp_aux,
+	O_sp=>o_sp_aux
+);
+
+end Behavioral;	
 
 begin
 end Behavioral;
