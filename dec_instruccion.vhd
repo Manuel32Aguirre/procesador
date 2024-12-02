@@ -8,7 +8,6 @@ port(
 	sel_r_d, sel_r_r, sel_w_d : out STD_LOGIC_VECTOR (4 downto 0);
 	sel_alu : out STD_LOGIC_VECTOR(2 downto 0);
 	ld, ld_mov, sel_rel, br, bn, en_w, en_port, en_sreg, ret_s, s1, s0 : out STD_LOGIC
-	-- Puede ser que S1 y S0 sea un vector
 );
 
 end dec_instruccion;
@@ -257,7 +256,7 @@ begin
 		sel_w_d <= "00000"; -- no importa
 		sel_alu <= "000"; -- no importa
 		ld <= '0';
-		ld_mov <= '1';
+		ld_mov <= '0';
 		sel_rel <= '0';
 		br <= '1';
 		bn <= '0';
@@ -275,7 +274,7 @@ begin
 		sel_w_d <= "00000"; -- no importa
 		sel_alu <= "000"; -- no importa
 		ld <= '0';
-		ld_mov <= '1';
+		ld_mov <= '0';
 		sel_rel <= '0';
 		br <= '0';
 		bn <= '1';
@@ -295,7 +294,7 @@ begin
 		sel_w_d <= "00000"; -- no importa
 		sel_alu <= "000"; -- no importa
 		ld <= '0';
-		ld_mov <= '1';
+		ld_mov <= '0';
 		sel_rel <= '1';
 		br <= '0';
 		bn <= '0';
@@ -313,7 +312,7 @@ begin
 		sel_w_d <= "00000"; -- no importa
 		sel_alu <= "000"; -- no importa
 		ld <= '0';
-		ld_mov <= '1';
+		ld_mov <= '0';
 		sel_rel <= '1';
 		br <= '0';
 		bn <= '0';

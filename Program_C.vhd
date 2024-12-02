@@ -1,26 +1,27 @@
 library IEEE;
-use IEEE.std_logic_1164.all;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity Program_C is
-port(
-	clk,clr: in std_logic;
-	I: in std_logic_vector (15 downto 0);
-	O: out std_logic_vector (15 downto 0)
+entity program_c is 
+Port(
+clk: in STD_LOGIC;
+clr: in STD_LOGIC;
+I: in STD_LOGIC_VECTOR (15 downto 0);
+O: out STD_LOGIC_VECTOR (15 downto 0)
 );
-end Program_C;
+end program_c;
 
-architecture Behavioral of Program_C is
-signal q_aux: std_logic_vector (15 downto 0);
-
+architecture Behavioral of program_c is
+signal q_aux: std_logic_vector(15 downto 0);
 begin
-	process(clk,clr)
-	begin
-		if(clr='1') then 
-			q_aux<=x"0000";
-		elsif(clk'event and clk='1') then 
-			q_aux<=I;
-		end if;
-	end process;
 
-	O<=q_aux;
+process(clk, clr)
+begin
+if(clr= '1') then q_aux <= x"0000";
+elsif(clk'event and clk='1') then
+q_aux <= I;
+end if;
+end process;
+
+O <= q_aux;
 end Behavioral;

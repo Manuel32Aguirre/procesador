@@ -1,0 +1,547 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\leonm\OneDrive\Escritorio\5 semestre\arquitectura\procesador-2\simulation\modelsim
+Ealu
+Z1 w1732035372
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\leonm\OneDrive\Escritorio\5 semestre\arquitectura\procesador-2\simulation\modelsim
+Z7 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ALU.vhd
+Z8 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ALU.vhd
+l0
+L5
+VUKjiPI1QkDhiz;AmiB_z33
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1732672905.042000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ALU.vhd|
+Z12 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ALU.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 z?G^;T2M9_8]a4zESV4fb2
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 3 alu 0 22 UKjiPI1QkDhiz;AmiB_z33
+l16
+L14
+VgA^R2iE3b?1b0VEz8@_>H1
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 6T_R^3CM]BnDjb1Xf?1B30
+!i10b 1
+Earchivo_registros
+Z15 w1732232344
+R2
+R3
+R4
+R5
+R6
+Z16 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/archivo_registros.vhd
+Z17 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/archivo_registros.vhd
+l0
+L5
+VkRhPY8i4H`^E^H@m_[:jV2
+R9
+31
+Z18 !s108 1732672905.384000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/archivo_registros.vhd|
+Z20 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/archivo_registros.vhd|
+R13
+R14
+!s100 Pc`BOfF3><fLSzNbjEMhL0
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 17 archivo_registros 0 22 kRhPY8i4H`^E^H@m_[:jV2
+l47
+L15
+VzPc7FY7iQXX[Y8aSK61JQ2
+R9
+31
+R18
+R19
+R20
+R13
+R14
+!s100 `ZYY7fnmRN^17T:k=FJ`b2
+!i10b 1
+Edec5_32
+Z21 w1729020029
+R2
+R3
+R4
+R5
+R6
+Z22 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/dec5_32.vhd
+Z23 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/dec5_32.vhd
+l0
+L5
+VRbQ2`HQ>NIK@DmP^4SELN2
+R9
+31
+Z24 !s108 1732672905.511000
+Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/dec5_32.vhd|
+Z26 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/dec5_32.vhd|
+R13
+R14
+!s100 TRXg4]UOn]@aD4If>[?TP3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 7 dec5_32 0 22 RbQ2`HQ>NIK@DmP^4SELN2
+l12
+L11
+V2CCMGmRBh]Vng8LU;FPZh0
+R9
+31
+R24
+R25
+R26
+R13
+R14
+!s100 Jb`KlCGmB??B`5lg@M=1c0
+!i10b 1
+Edec_instruccion
+Z27 w1732669996
+R2
+R3
+R4
+R5
+R6
+Z28 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/dec_instruccion.vhd
+Z29 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/dec_instruccion.vhd
+l0
+L5
+VZ_E@^i2@4RNfim>i[L:n03
+R9
+31
+Z30 !s108 1732672904.928000
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/dec_instruccion.vhd|
+Z32 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/dec_instruccion.vhd|
+R13
+R14
+!s100 Hb3DXXG<70IYO]RKmA4bQ1
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 15 dec_instruccion 0 22 Z_E@^i2@4RNfim>i[L:n03
+l16
+L15
+VAo]F:<FKKQOO`cYIHa=^<3
+R9
+31
+R30
+R31
+R32
+R13
+R14
+!s100 _Xdj7JfzCP_zRnBR:?:oZ1
+!i10b 1
+Eext_sig_br
+Z33 w1732034709
+R2
+R3
+R4
+R5
+R6
+Z34 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ext_sig_br.vhd
+Z35 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ext_sig_br.vhd
+l0
+L5
+Vdbd:aSINdP?`m0DccjRCg1
+R9
+31
+Z36 !s108 1732672904.489000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ext_sig_br.vhd|
+Z38 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ext_sig_br.vhd|
+R13
+R14
+!s100 Qj`;3?9S<g4CPf^FmSmW20
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 10 ext_sig_br 0 22 dbd:aSINdP?`m0DccjRCg1
+l12
+L11
+VY09L^lekP0JE:G42TUSS41
+R9
+31
+R36
+R37
+R38
+R13
+R14
+!s100 6VX`bE_o1T]3zW9oiV8G31
+!i10b 1
+Eext_sig_rjmp
+Z39 w1732038292
+R2
+R3
+R4
+R5
+R6
+Z40 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ext_sig_rjmp.vhd
+Z41 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ext_sig_rjmp.vhd
+l0
+L5
+V]?g;kH`4[5R[IRPDz6HH@3
+R9
+31
+Z42 !s108 1732672905.271000
+Z43 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ext_sig_rjmp.vhd|
+Z44 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/ext_sig_rjmp.vhd|
+R13
+R14
+!s100 ]az]9ha9XT16?6;Ue:2e`0
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 12 ext_sig_rjmp 0 22 ]?g;kH`4[5R[IRPDz6HH@3
+l13
+L12
+VfgEAD_NKGLTVU3=XXJz@l0
+R9
+31
+R42
+R43
+R44
+R13
+R14
+!s100 ]F2GMejPNF1U[1J4jbBhK2
+!i10b 1
+Emem_prog
+Z45 w1732667767
+R2
+R3
+R4
+R5
+R6
+Z46 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/mem_prog.vhd
+Z47 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/mem_prog.vhd
+l0
+L5
+V`n:8F2;hn:h6Mb2fanJZ;1
+R9
+31
+Z48 !s108 1732672904.816000
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/mem_prog.vhd|
+Z50 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/mem_prog.vhd|
+R13
+R14
+!s100 7z=3M^g_DGU1XAPb6<F?62
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 8 mem_prog 0 22 `n:8F2;hn:h6Mb2fanJZ;1
+l13
+L12
+VAjkG3A4z2zmgF4nLeR8I:3
+R9
+31
+R48
+R49
+R50
+R13
+R14
+!s100 nhTK]D:dE0@3ZZ3odMah^1
+!i10b 1
+Emux32_8
+Z51 w1728357720
+R2
+R3
+R4
+R5
+R6
+Z52 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/mux32_8.vhd
+Z53 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/mux32_8.vhd
+l0
+L5
+V[a^JA@L]aHfU[zS=F4lNY1
+!s100 ;GiKZzTzAKLQb0<68SbhD3
+R9
+31
+!i10b 1
+Z54 !s108 1732672905.619000
+Z55 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/mux32_8.vhd|
+Z56 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/mux32_8.vhd|
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 7 mux32_8 0 22 [a^JA@L]aHfU[zS=F4lNY1
+l13
+L12
+Veo]gP]NEeo2mX_8>_YgKc2
+!s100 IMZJ7e]7Rc<PHYUde^;Of3
+R9
+31
+!i10b 1
+R54
+R55
+R56
+R13
+R14
+Eprocesador
+Z57 w1732233363
+R2
+R3
+R4
+R5
+R6
+Z58 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/procesador.vhd
+Z59 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/procesador.vhd
+l0
+L5
+VU::8]9eTSbSFBBaCGRz4;2
+R9
+31
+Z60 !s108 1732672905.155000
+Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/procesador.vhd|
+Z62 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/procesador.vhd|
+R13
+R14
+!s100 [>gWlOFPC5@LF82QCM7MV0
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 10 procesador 0 22 U::8]9eTSbSFBBaCGRz4;2
+l115
+L13
+VR=iV<z<hhU`Q19Gb78RIJ0
+R9
+31
+R60
+R61
+R62
+R13
+R14
+!s100 zHMW@2ocd^>k]EdAXzciJ1
+!i10b 1
+Eprogram_c
+Z63 w1728348574
+R2
+R3
+R4
+R5
+R6
+Z64 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/Program_C.vhd
+Z65 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/Program_C.vhd
+l0
+L5
+VO7gTfTgcFYN3>DzB32W1Y1
+R9
+31
+Z66 !s108 1732672904.708000
+Z67 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/Program_C.vhd|
+Z68 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/Program_C.vhd|
+R13
+R14
+!s100 `;3O93F@WU7817D0^9NHB3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 9 program_c 0 22 O7gTfTgcFYN3>DzB32W1Y1
+l16
+L14
+VRY9fP>[Ko_A0@E[c<U6Am1
+R9
+31
+R66
+R67
+R68
+R13
+R14
+!s100 10P3LmG[]Q=h97oHKd9FM2
+!i10b 1
+Eram
+Z69 w1728353410
+R2
+R3
+R4
+R5
+R6
+Z70 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/RAM.vhd
+Z71 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/RAM.vhd
+l0
+L5
+VGRcFVCQH`VzQkTAh[M0cX3
+R9
+31
+Z72 !s108 1732672904.280000
+Z73 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/RAM.vhd|
+Z74 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/RAM.vhd|
+R13
+R14
+!s100 NYLZ:VK6j7ad3<RUVcDdA2
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 3 ram 0 22 GRcFVCQH`VzQkTAh[M0cX3
+l20
+L14
+VHk62G1N^JM3l4lFS15CC[2
+R9
+31
+R72
+R73
+R74
+R13
+R14
+!s100 dnP[zRZX210302Yl^7KhV0
+!i10b 1
+Eregistro
+R33
+R2
+R3
+R4
+R5
+R6
+Z75 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/registro.vhd
+Z76 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/registro.vhd
+l0
+L5
+V;hX6MFI?gATS8W^iaVk><3
+R9
+31
+Z77 !s108 1732672904.600000
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/registro.vhd|
+Z79 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/registro.vhd|
+R13
+R14
+!s100 YFz^8kEGJ0H6UFA`1W<0[0
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 8 registro 0 22 ;hX6MFI?gATS8W^iaVk><3
+l16
+L14
+VO2bJUR?mlUne_JJM=3oA@3
+R9
+31
+R77
+R78
+R79
+R13
+R14
+!s100 DNe2ef3K22]lQ0mTkoQH81
+!i10b 1
+Esreg
+R33
+R4
+R5
+R6
+Z80 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/sreg.vhd
+Z81 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/sreg.vhd
+l0
+L4
+VCIh6`Ee0DazbfV8zBk8`j0
+R9
+31
+Z82 !s108 1732672904.385000
+Z83 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/sreg.vhd|
+Z84 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/sreg.vhd|
+R13
+R14
+!s100 cz<cORR]a4<T[[5]HnB;B3
+!i10b 1
+Abehavioral
+R4
+R5
+DEx4 work 4 sreg 0 22 CIh6`Ee0DazbfV8zBk8`j0
+l13
+L11
+Vg^Pn;:g5XMP>gP`h8:b6?1
+R9
+31
+R82
+R83
+R84
+R13
+R14
+!s100 N3D8jYS7=FXo6k@?KeUM;0
+!i10b 1
+Estack_p
+Z85 w1728351854
+R2
+R3
+R4
+R5
+R6
+Z86 8C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/Stack_P.vhd
+Z87 FC:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/Stack_P.vhd
+l0
+L5
+Vcbf4]o09Eo432>a`V8z@L3
+R9
+31
+Z88 !s108 1732672904.169000
+Z89 !s90 -reportprogress|300|-93|-work|work|C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/Stack_P.vhd|
+Z90 !s107 C:/Users/leonm/OneDrive/Escritorio/5 semestre/arquitectura/procesador-2/Stack_P.vhd|
+R13
+R14
+!s100 cUOJV48lMRDg65ERO;@X;3
+!i10b 1
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 7 stack_p 0 22 cbf4]o09Eo432>a`V8z@L3
+l17
+L15
+VlCYkO9UhMTEN7b6MMiaX=3
+R9
+31
+R88
+R89
+R90
+R13
+R14
+!s100 LeCQXS:e;aKP9YQRCFTY71
+!i10b 1
