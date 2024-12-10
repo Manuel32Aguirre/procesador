@@ -1,0 +1,47 @@
+    ; Configuración inicial
+    MOV R0, #0       ; Inicializa milisegundos a 0
+    MOV R1, #0       ; Inicializa segundos a 0
+    MOV R2, #0       ; Inicializa minutos a 0
+    MOV R3, #1000    ; Valor de comparación para milisegundos
+    MOV R4, #60      ; Valor de comparación para segundos
+
+Inicio:
+    CALL EsperarTick ; Espera un tick del temporizador (1 ms)
+    CALL IncrementarTiempo
+    CALL ActualizarDisplay
+    JMP Inicio       ; Repite el ciclo
+
+EsperarTick:
+    ; Lazo para esperar el tick
+    IN R5, TEMP_FLAG ; Lee el estado del temporizador
+    CMP R5, #1       ; ¿Tick generado?
+    JNE EsperarTick  ; Si no, sigue esperando
+    OUT TEMP_RESET, #1 ; Reinicia el temporizador
+    RET
+
+
+IncrementarTiempo:
+    ; Incrementar milisegundos
+    ADD R0, #1       ; R0 = R0 + 1 (milisegundos)
+    CMP R0, R3       ; ¿Milisegundos >= 1000?
+    JL FinIncremento ; Si no, salta
+
+    ; Milisegundos alcanzaron 1000, reinicia y suma 1 segundo
+    MOV R0, #0       ; Reinicia milisegundos
+    ADD R1, #1       ; Incrementa segundos
+    CMP R1, R4       ; ¿Segundos >= 60?
+    JL FinIncremento ; Si no, salta
+
+    ; Segundos alcanzaron 60, reinicia y suma 1 minuto
+    MOV R1, #0       ; Reinicia segundos
+    ADD R2, #1       ; Incrementa minutos
+
+FinIncremento:
+    RET
+
+ActualizarDisplay:
+    ; Actualiza displays conectados a registros de salida
+    OUT DISP_MS, R0  ; Envía milisegundos al display
+    OUT DISP_S, R1   ; Envía segundos al display
+    OUT DISP_M, R2   ; Envía minutos al display
+    RET
