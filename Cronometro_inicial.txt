@@ -41,7 +41,7 @@ FinIncremento:
 
 ActualizarDisplay:
     ; Actualiza displays conectados a registros de salida
-    OUT DISP_MS, R0  ; Envía milisegundos al display
+    ; OUT DISP_MS, R0  ; Envía milisegundos al display, pero mejor nos ahorramos espacio y que este conteo solo sea interno
     OUT DISP_S, R1   ; Envía segundos al display
     OUT DISP_M, R2   ; Envía minutos al display
     RET
